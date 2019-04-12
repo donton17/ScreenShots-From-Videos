@@ -3,8 +3,7 @@ import os
 
 fp = open('PathOfSource', 'r') # This source file is text file and it contains name of Video files with path.
 for filePath in fp.readlines():
-    words = filePath.split("/")[-1:]
-    vidcap = cv2.VideoCapture(filePath)
+    vidcap = cv2.VideoCapture(filePath) # If You want to extract images from only one vide than comment line 4-6, And replace 'filePath' with your actual file path.
     count = 0
     success = True
     fps = int(vidcap.get(cv2.CAP_PROP_FPS))
