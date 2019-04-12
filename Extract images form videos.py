@@ -21,10 +21,3 @@ for filePath in fp.readlines():
             cv2.imwrite(directory+'/frame%d.jpg'%count,image)
             print('# ',end='')
         count+=1
-
-
-# In[ ]:
-
-
-
-
